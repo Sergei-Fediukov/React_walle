@@ -1,0 +1,68 @@
+// @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+// @font-face {
+//   font-family: 'Press Start 2P';
+//   src: url('../../../public/assets/PressStart2P-Regular.ttf') format('ttf');
+// }
+
+.gear {
+  animation: rotate 2s linear infinite;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -110px 0 0 -150px;
+  width: 300px;
+  height: 300px;
+  filter: drop-shadow(0px 0px 100px rgba(248, 201, 155, 0.4));
+}
+.gear2 {
+  animation: rotate2 2s linear infinite;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0 0 -420px;
+  width: 380px;
+  height: 380px;
+  filter: drop-shadow(0px 0px 100px rgba(248, 201, 155, 0.4));
+}
+.gear3 {
+  animation: rotate2 2s linear infinite;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -170px 0 0 70px;
+  width: 200px;
+  height: 200px;
+  filter: drop-shadow(0px 0px 100px rgba(248, 201, 155, 0.9));
+}
+
+.textBlock {
+  position: absolute;
+  z-index: 3;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 64px;
+  font-family: 'PressStart2P-Regular';
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotate3 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}

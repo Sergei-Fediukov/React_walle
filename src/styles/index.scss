@@ -1,0 +1,43 @@
+@import 'src/styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+  height: 100vh;
+  user-select: none;
+  overflow: hidden;
+}
+body {
+  color: $dark-gray-color;
+  font-weight: 700;
+  height: 100%;
+  margin: 0;
+  background-color: $black-color;
+  color: $white-color;
+}
+
+table {
+  display: grid;
+}
+
+thead,
+tbody,
+tr {
+  display: contents;
+}
+
+th,
+td {
+  text-align: left;
+}
+
+.icon {
+  cursor: pointer;
+}

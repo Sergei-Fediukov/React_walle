@@ -1,0 +1,45 @@
+@import 'src/styles/variables.scss';
+
+.canvas {
+  position: absolute;
+  z-index: 1;
+  margin: 0 15px;
+  &__container {
+    border-radius: 50%;
+    height: 635px;
+    width: 635px;
+    overflow: hidden;
+    box-sizing: content-box;
+    border: 20px solid rgb(0, 0, 0, 0.3);
+    border-radius: 50%;
+    & canvas {
+      position: relative;
+    }
+  }
+}
+
+.circle1 {
+  border: 15px solid rgb(0, 0, 0, 0.3);
+  position: absolute;
+  width: 25px;
+  padding: 40px 70px;
+  border-radius: 50%;
+  right: -100px;
+  top: 35px;
+  @media (max-width: $large-weight) {
+    display: none;
+  }
+}
+
+.circle2 {
+  border: 10px solid rgb(0, 0, 0, 0.3);
+  position: absolute;
+  width: 5px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  right: -145px;
+  top: 35px;
+  @media (max-width: $large-weight) {
+    display: none;
+  }
+}
