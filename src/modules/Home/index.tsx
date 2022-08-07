@@ -47,7 +47,7 @@ export const Home = () => {
     'https://res.cloudinary.com/dg6nys3ff/image/upload/v1659819962/react_walle/walle_on_earth_gw0ehw.jpg',
   );
   const buttonSpaceBg = useProgressiveImage(
-    'https://filmsfortheearth.org/wp-content/uploads/transferred-images/58c/fbf/17d/58cfbf17d89bb397980255-930x518.jpg',
+    'https://res.cloudinary.com/dg6nys3ff/image/upload/v1659821762/react_walle/walle_in_space_qmg8kh.jpg',
   );
 
   const [state, setState] = useState(null);
@@ -82,7 +82,8 @@ export const Home = () => {
     }
   }, [state, art2]);
 
-  const allAssetsDownloaded = bg && art && art2 && buttonEarthBg && buttonSpaceBg;
+  const allAssetsDownloaded =
+    bg && art && art2 && buttonEarthBg && buttonSpaceBg;
 
   useEffect(() => {
     if (!state) {
@@ -92,7 +93,7 @@ export const Home = () => {
   }, [art, state, allAssetsDownloaded, handleCreateSplotch]);
 
   const handleChoose = useCallback((image) => {
-   return ()=> setState(image);
+    return () => setState(image);
   }, []);
 
   return (
@@ -104,18 +105,22 @@ export const Home = () => {
             style={{ backgroundImage: `url(${bg || ''})` }}
           >
             <Sidebar>
-              <div
-                className={styles.button}
-                role="presentation"
-                style={{ backgroundImage: `url(${buttonEarthBg || ''})` }}
-                onClick={handleChoose(art)}
-              />
-              <div
-                className={styles.button}
-                role="presentation"
-                style={{ backgroundImage: `url(${buttonSpaceBg || ''})` }}
-                onClick={handleChoose(art2)}
-              />
+              <div className={styles.test}>
+                <div
+                  className={styles.button}
+                  role="presentation"
+                  style={{ backgroundImage: `url(${buttonEarthBg || ''})` }}
+                  onClick={handleChoose(art)}
+                />
+              </div>
+              <div className={styles.test}>
+                <div
+                  className={styles.button}
+                  role="presentation"
+                  style={{ backgroundImage: `url(${buttonSpaceBg || ''})` }}
+                  onClick={handleChoose(art2)}
+                />
+              </div>
             </Sidebar>
           </div>
           <Canvas ref={canvasRef} />
