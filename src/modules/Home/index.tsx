@@ -38,7 +38,7 @@ export const Home = () => {
     'https://res.cloudinary.com/dg6nys3ff/image/upload/v1658006916/react_walle/bg_xtapyk.jpg',
   );
   const art = useProgressiveImage(
-    'https://res.cloudinary.com/dg6nys3ff/image/upload/v1659187957/react_walle/art_s8h4v9.png',
+    'https://res.cloudinary.com/dg6nys3ff/image/upload/v1659868664/react_walle/art_s8h4v9.png',
   );
   const art2 = useProgressiveImage(
     'https://res.cloudinary.com/dg6nys3ff/image/upload/v1659806976/react_walle/art2_ovm4jg.png',
