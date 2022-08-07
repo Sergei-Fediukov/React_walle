@@ -26,7 +26,7 @@
   border-radius: 50%;
   right: -100px;
   top: 35px;
-  @media (max-width: $large-weight) {
+  @media (max-width: $extra-large-weight) {
     display: none;
   }
 }
@@ -39,7 +39,7 @@
   border-radius: 50%;
   right: -145px;
   top: 35px;
-  @media (max-width: $large-weight) {
+  @media (max-width: $extra-large-weight) {
     display: none;
   }
 }
